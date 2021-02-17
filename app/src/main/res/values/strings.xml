@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BigStep</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_video">Videos</string>
+    <string name="title_history">History</string>
+    <string name="todo">TODO</string>
+    <string name="preview">Preview</string>
+    <string name="track">Tracks</string>
+    <string name="no_tracks_to_show">No tracks to show</string>
+    <string name="retry">Retry</string>
+    <string name="no_tracks_in_your_history">No track in your history</string>
+    <string name="collection_not_available">Collection Name Not Available</string>
+    <string name="view_by_you">View by you</string>
+</resources>

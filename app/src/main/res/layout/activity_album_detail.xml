@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="@dimen/margin_5"
+    android:layout_margin="@dimen/margin_5"
+    app:cardCornerRadius="@dimen/margin_10"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewBlog"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutRelative"
+            android:layout_below="@+id/imageViewArtWork"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10"
+                android:orientation="vertical"
+                android:id="@+id/layoutTitles"
+                >
+
+                <TextView
+                    android:id="@+id/textViewAlbumName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Ultimate Collection"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    >
+
+
+                </TextView>
+                <TextView
+                    android:id="@+id/textViewTrackName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I Want You Back"
+                    android:fontFamily="sans-serif-light"
+                    android:textAllCaps="true"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    >
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textViewArtistName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jackson 5"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/margin_5"
+                    >
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_below="@id/layoutTitles"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:id="@+id/layoutDetail"
+
+                >
+                <TextView
+                    android:id="@+id/trackPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 USD"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_outline_account_balance_wallet_24"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/margin_5"
+
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/trackTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_outline_access_time_24"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/margin_5"
+
+
+
+                    ></TextView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_below="@id/layoutDetail"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                >
+                <TextView
+                    android:id="@+id/collectionTrackCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="20 Tracks"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_outline_album_24"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/margin_5"
+
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/trackViewCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="20 View by you"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_outline_view_24"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/margin_5"
+
+                    ></TextView>
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageViewArtWork"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/class_holder"
+            android:scaleType="centerCrop"
+
+            >
+
+
+        </ImageView>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/layoutRelative"
+    android:text="@string/preview"
+
+    ></Button>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
